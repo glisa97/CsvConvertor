@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgTest", "AgTest\AgTest.csproj", "{CACD32FC-A167-4FC2-837D-127873A5EFA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CACD32FC-A167-4FC2-837D-127873A5EFA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACD32FC-A167-4FC2-837D-127873A5EFA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACD32FC-A167-4FC2-837D-127873A5EFA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACD32FC-A167-4FC2-837D-127873A5EFA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19BC630F-F0E6-4017-8A2F-20EE08113E5B}
+	EndGlobalSection
+EndGlobal
