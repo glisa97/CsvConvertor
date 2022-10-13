@@ -404,3 +404,4 @@ C:\Users\aleks\Desktop\Convertor\AgTest\AgTest\obj\Debug\net5.0\AgTest.csproj.Co
 C:\Users\aleks\Desktop\Convertor\AgTest\AgTest\obj\Debug\net5.0\AgTest.dll
 C:\Users\aleks\Desktop\Convertor\AgTest\AgTest\obj\Debug\net5.0\ref\AgTest.dll
 C:\Users\aleks\Desktop\Convertor\AgTest\AgTest\obj\Debug\net5.0\AgTest.genruntimeconfig.cache
+C:\Users\aleks\Desktop\Convertor\AgTest\AgTest\bin\Debug\net5.0\HtmlAgilityPack.dll

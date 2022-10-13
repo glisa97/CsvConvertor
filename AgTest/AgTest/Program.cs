@@ -1,7 +1,10 @@
 ﻿using ExcelDataReader;
+using HtmlAgilityPack;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,19 +14,38 @@ namespace AgTest
     {
         static async Task Main(string[] args)
         {
-            
             FIleDownloader downloader = new FIleDownloader();
             Convertor convertor = new Convertor();
 
-            string fileName = "Excel.xlsx";
+            string baseAddress = "https://bakerhughesrigcount.gcs-web.com";
+            string fileName = "HtmlPage.html";
             string path = Path.Combine(Environment.CurrentDirectory, @"..\..\..\..\..\", fileName);
-            //string file = @"C:\Users\aleks\Desktop\AgTest\Excel.xlsx";
-            Uri url = new Uri("https://bakerhughesrigcount.gcs-web.com/static-files/e106a3e4-ddd8-4e7d-93a3-01c3de9e7ac0");
 
-            await downloader.Download(url, path);
+            Uri url = new Uri(baseAddress + "/intl-rig-count?c=79687&p=irol-rigcountsintl");
+
+            await downloader.Download(url, path, fileName);
+
+            HtmlWeb htmlWeb = new HtmlWeb();
+            HtmlDocument htmlDoc = new HtmlDocument();
+            htmlDoc = htmlWeb.Load(path);
+
+            foreach (HtmlNode node in htmlDoc.DocumentNode.SelectNodes("//a[@href]"))
+            {
+                string titleValue = node.GetAttributeValue("title", string.Empty);
+
+                if (titleValue == "Worldwide Rig Count Sep 2022.xlsx") 
+                {
+                    string hrefValue = String.Concat(baseAddress, node.GetAttributeValue("href", string.Empty));
+                    url = new Uri(hrefValue);
+                }
+            }
+            fileName = "Excel.xlsx";
+            path = Path.Combine(Environment.CurrentDirectory, @"..\..\..\..\..\", fileName);
+            await downloader.Download(url, path,fileName);
+
             convertor.ConvertExcelToXlsx(path);
 
-            Console.WriteLine("\nFile is in Convertor folder.\n");
+            Console.WriteLine("\nFiles are in main folder.\n");
         }
     }
 }

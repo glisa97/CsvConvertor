@@ -20,8 +20,9 @@ namespace AgTest.Tests
         public async Task FileDownloaderTest()
         {
             string file = @"C:\Users\aleks\Desktop\AgTest\TestFile.xlsx";
+            string fileName = "Testfile";
             Uri url = new Uri("https://bakerhughesrigcount.gcs-web.com/static-files/e106a3e4-ddd8-4e7d-93a3-01c3de9e7ac0");
-            await _fileDownloader.Download(url, file);
+            await _fileDownloader.Download(url, file,fileName);
         }
     }
 }

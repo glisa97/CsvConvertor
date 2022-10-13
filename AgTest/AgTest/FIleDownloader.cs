@@ -1,4 +1,5 @@
 ﻿using AgTest.Interfaces;
+using HtmlAgilityPack;
 using RestSharp;
 using System;
 using System.Collections.Generic;
@@ -14,12 +15,12 @@ namespace AgTest
 {
     public class FIleDownloader : IFileDownloader
     {
-        public async Task Download(Uri url, string file)
+        public async Task Download(Uri url, string file, string fileName)
         {
             using (WebClient client = new WebClient())
             {
                 client.Headers.Add("Accept", "text/html");
-                client.DownloadFileCompleted += (s, e) => Console.WriteLine("Download file completed.");
+                client.DownloadFileCompleted += (s, e) => Console.WriteLine("Download " + fileName + " completed ");
                 await client.DownloadFileTaskAsync(url, file);
             }
         }

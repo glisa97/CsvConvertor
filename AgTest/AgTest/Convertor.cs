@@ -54,7 +54,7 @@ namespace AgTest
                 row_no++;
                 csvData += "\n";
             }
-            string fileName = filename + "CSV" + ".xlsx";
+            string fileName = filename + "CSV" + ".csv";
             string path = Path.Combine(Environment.CurrentDirectory, @"..\..\..\..\..\", fileName);
             //string output = @"C:\Users\aleks\Desktop\AgTest\" + filename + "CSV" + ".xlsx";
             StreamWriter csv = new StreamWriter(path, false);

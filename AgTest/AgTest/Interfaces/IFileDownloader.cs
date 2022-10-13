@@ -8,6 +8,6 @@ namespace AgTest.Interfaces
 {
     public interface IFileDownloader
     {
-        Task Download(Uri url, string file);
+        Task Download(Uri url, string file, string fileName);
     }
 }

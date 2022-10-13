@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+BarROJWSRM5Dg6qlKosketQQdzx+gvqyGksic/MweKM70AK7AzxvyYbHdQPZJ3NAlSkuohCxnidHdF+uWo44w==",
+  "dgSpecHash": "nu6p/AZX3GnZinJeu3/C1xnrPoF3ptjK56stMLRrUU7qD7n1In63OcMgOEoqrNpg1gPKW4o9nB2f2cQJjw+qAg==",
   "success": true,
   "projectFilePath": "C:\\Users\\aleks\\Desktop\\Convertor\\AgTest\\AgTest\\AgTest.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\aleks\\.nuget\\packages\\emptyfiles\\2.8.0\\emptyfiles.2.8.0.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\htmlagilitypack\\1.11.46\\htmlagilitypack.1.11.46.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\microsoft.codecoverage\\17.3.2\\microsoft.codecoverage.17.3.2.nupkg.sha512",
